@@ -21,6 +21,7 @@ gem 'mini_magick', '~> 4.11'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'country_select', '~> 4.0'
 gem 'jquery-rails'
+gem 'minitest', '~> 5.14', '>= 5.14.4'
 
 
 
