@@ -15,6 +15,8 @@ gem "jbuilder"
 gem "bootstrap"
 gem "sassc-rails"
 gem "devise"
+gem 'carrierwave', '~> 3.0'
+gem "mini_magick"
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
