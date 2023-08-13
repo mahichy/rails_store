@@ -1,14 +1,27 @@
-<p style="color: green"><%= notice %></p>
+<h1>Listing Products</h1>
 
-<h1>Products</h1>
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Image</th>
+  </tr>
+  </thead>
 
-<div id="products">
-  <% @products.each do |product| %>
-    <%= render product %>
-    <p>
-      <%= link_to "Show this product", product %>
-    </p>
-  <% end %>
-</div>
+  <tbody>
+    <% @products.each do |product| %>
+    <tr>
+      <td><%= link_to product.name, product %></td>
+      <td><%= product.price%></td>
+      <td><%= image_tag (product.image_url) %></td>
+      <td><%= link_to 'Edit', edit_product_path(product)%></td>
+      <td><%= button_to 'Destroy', product, method: :delete %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
 
-<%= link_to "New product", new_product_path %>
+<%# link_to image_tag(listing.image_url), listing  %>
+
+<%= link_to "New product", new_product_path, class: "btn btn-primary" %>

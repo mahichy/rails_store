@@ -259,7 +259,7 @@ DEPENDENCIES
   bootsnap
   bootstrap
   capybara
-  carrierwave (~> 3.0)
+  carrierwave
   debug
   devise
   importmap-rails
