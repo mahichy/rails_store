@@ -1,4 +1,6 @@
 <div id="<%= dom_id product %>">
+  <h1><%= product.name%> </h1>
+  
   <p>
     <strong>Name:</strong>
     <%= product.name %>
@@ -6,12 +8,11 @@
 
   <p>
     <strong>Price:</strong>
-    <%= product.price %>
+    <%= number_to_currency product.price %>
   </p>
 
   <p>
-    <strong>Image:</strong>
-    <%= product.image %>
+    <%= image_tag product.image_url %>
   </p>
 
 </div>
